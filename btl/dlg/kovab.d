@@ -1673,7 +1673,7 @@ Global("Z#TrialClear","GLOBAL",0)
 !RealGlobalTimerNotExpired("KKBanterTMin","GLOBAL")
 InParty("Kiyone") InMyArea("Kiyone") 
 Global("KKInStage2x","GLOBAL",1)
-Global("KKBanter21","GLOBAL",0)~ THEN Z#KIYOB KKBanter21in1
+Global("KKBanter21","GLOBAL",0)~ THEN Z#KOVAB KKBanter21in1
 @741
 = @742
 DO ~PlaySound("kkrom2") PlaySong(0)~ EXTERN Z#KIYOB KKBanter21

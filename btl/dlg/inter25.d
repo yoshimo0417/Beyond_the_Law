@@ -73,7 +73,7 @@ END
 /* --------------------------- *
  *  Il-Khan Soldier (GROMG01)  *
  * --------------------------- */
-INTERJECT_COPY_TRANS2 gromg01 10 z#gromg01-5
+INTERJECT_COPY_TRANS2 gromg01 5 z#gromg01-5
 == Z#KIYOJ IF ~InParty("Kiyone") InMyArea("Kiyone")~ THEN 
 @19
 END

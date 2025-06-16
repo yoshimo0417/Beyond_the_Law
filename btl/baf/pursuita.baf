@@ -23,7 +23,7 @@ THEN
 	SetGlobal("Z#TellSeidaFree","GLOBAL",1)
 	SetGlobal("Z#BTLPart7","GLOBAL",4)
 	CreateCreatureObjectOffScreen("Z#DAYVEN",Player1,0,0,0)
-	ActionOverride("Z#DAYVEN",StartDialogNoSet(Player1))
+	ActionOverride("Dayven",StartDialogNoSet(Player1))
 END
 
 // Shadow Thieves

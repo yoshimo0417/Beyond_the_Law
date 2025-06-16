@@ -316,7 +316,7 @@ GlobalGT("KKRomance","GLOBAL",1)~ THEN
 InParty("Kova") InMyArea("Kova")
 GlobalGT("KKRomance","GLOBAL",1)~ THEN
 @64
-== Z#KIYOJ IF ~InParty("Kiyone") InMyArea("Kiyone")
+== Z#KOVAJ IF ~InParty("Kiyone") InMyArea("Kiyone")
 InParty("Kova") InMyArea("Kova")
 GlobalGT("KKRomance","GLOBAL",1)~ THEN
 @65

@@ -185,7 +185,7 @@ IF ~Global("Dayven","GLOBAL",4)
 == Z#KIYOJ @63
 == Z#KOVAJ @64
 DO ~AddexperienceParty(9000)
-AddJournalEntry(@1013,QUEST)
+AddJournalEntry(@5013,QUEST)
 SetGlobal("Dayven","GLOBAL",5)~ EXIT
 
 CHAIN
@@ -1276,7 +1276,7 @@ END
 INTERJECT_COPY_TRANS ~Bodhi~ 18 JoinedBodhi
 == Z#KIYOJ IF ~InParty("Kiyone")~ THEN @405
 DO ~DropInventory() LeaveParty() EscapeArea()~
-== Z#KIYOJ IF ~InParty("Kova")~ THEN @406
+== Z#KOVAJ IF ~InParty("Kova")~ THEN @406
 DO ~DropInventory() LeaveParty() EscapeArea()~
 END
 
@@ -1528,14 +1528,15 @@ AddexperienceParty(12000)
 SetGlobalTimer("KKGovtT","GLOBAL",50400)~ EXIT
 
 CHAIN
-IF ~~ THEN BYLANNA bylevidenough
+IF ~!Global("BylSetFree","GLOBAL",1)~ THEN BYLANNA bylevidenough
 @465
 == Z#KIYOJ @466
 == BYLANNA @467
 = @468
 == Z#KIYOJ @469
 == BYLANNA @470
-DO ~SetGlobal("GovtGuards","GLOBAL",4)
+DO ~SetGlobal("BylSetFree","GLOBAL",1)
+SetGlobal("GovtGuards","GLOBAL",4)
 RealSetGlobalTimer("Z#enoughT","GLOBAL",15)~ EXIT
 
 CHAIN
@@ -3599,7 +3600,7 @@ GiveItemCreate("SCRL8R",Myself,1,0,0)
 LeaveParty()
 EscapeAreaMove("Z#0041",1200,0,8)~ EXIT
 // mage level 13-15,spells 7-8
-IF ~XPGT(Myself,999999) !XPGT(Myself,999999)~ THEN //
+IF ~XPGT(Myself,999999) !XPGT(Myself,1999999)~ THEN //
 DO ~DropInventory() SetGlobal("KickedOut","LOCALS",1)
 GiveItemCreate("SCRL8R",Myself,1,0,0)
 GiveItemCreate("SCRL9D",Myself,1,0,0)
@@ -4136,7 +4137,7 @@ OR(2)
 CheckStatGT(Player1,13,INT)
 CheckStatGT(Player1,13,WIS)
 Global("Z#BribedEdwin","GLOBAL",1)~ THEN REPLY @1307 EXTERN EDWINP edseida4
-IF ~Global("Z#BribedEdwin","GLOBAL",2)~ THEN EXTERN EDWINP edseida1
+IF ~Global("Z#BribedEdwin","GLOBAL",2)~ THEN EXTERN EDWINP edseida4
 
 CHAIN
 IF ~~ THEN EDWINP edseida1
@@ -4179,7 +4180,8 @@ CHAIN
 IF WEIGHT #-1 ~Global("Z#BribedEdwin","GLOBAL",6)
 Global("Z#EdwinAppear","Z#0041",1)
 Global("Z#SeidaWizard","Z#0041",0)
-GlobalTimerExpired("Z#SeidaWizardT","Z#0041")~ THEN Z#SEID16 edleaveme
+GlobalTimerExpired("Z#SeidaWizardT","Z#0041")
+!Global("Z#Fallen","LOCALS",1)~ THEN Z#SEID16 edleaveme
 @1312
 = @1313
 END
