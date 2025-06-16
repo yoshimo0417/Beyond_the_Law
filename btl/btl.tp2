@@ -22,6 +22,11 @@ LANGUAGE ~English~
          ~btl/lang/english/setup.tra~
          ~weidu_external/lang/btl/english/strings.tra~
 
+LANGUAGE ~Simplified Chinese by Yoshimo0417~
+         ~schinese~
+         ~btl/lang/schinese/setup.tra~
+         ~weidu_external/lang/btl/schinese/strings.tra~
+
 
 /* ================================================= *
  *  Beyond the Law - Kova & Kiyone (main component)  *

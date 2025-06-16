@@ -1,0 +1,17 @@
+@0    = ~法外寻情——小叶与清音的故事~
+@1    = ~为法外寻情安装清音原始语音包~
+@2    = ~为法外寻情安装清音替换语音包（女性4）~
+@3    = ~平衡性更佳的武器物品~
+/* DEPRECATED as of v2.0.0
+@3    = ~为部分NPC安装肖像~
+*/
+
+@11   = ~要安装这款MOD，你需要先安装ToB、BGT、BG2:EE或EET。~
+@12   = ~此组件需要先安装法外寻情核心组件。~
+
+@21   = ~Installing graphics and sound sets...~
+@22   = ~Installing areas...~
+@23   = ~Installing dialogues...~
+@24   = ~Installing scripts...~
+@25   = ~Installing creatures...~
+@26   = ~Installing items...~
